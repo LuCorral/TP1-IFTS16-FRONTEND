@@ -1,0 +1,297 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+li{
+    list-style: none;
+}
+
+#logo_nav{
+    margin: 0% 4% 2% 2%;
+    width: 150px;
+    height: 150px;
+}
+
+#navegacion_vacia{
+    height: 4.5vh;
+    border-color: #003880;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #003880;
+}
+
+#navegacion{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    border-color: #003880;
+    border-style: solid;
+    border-width: 1px;
+    height: 10vh;
+    background-color: #003880;
+    padding-left: 10%;
+}
+
+#navegacion ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    background-color: #003880;
+    width: 70%;
+    font-size: 12px;
+    font-weight: bold;
+    gap: 25px;
+}
+
+.rs-img {
+    width: 5%;
+    height: auto;
+}
+
+.principal{
+    display: flex;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    justify-content: center;
+    /* border-color: blue; */
+    border-style: solid;
+    border-width: 1px;
+    min-height: 80vh;
+    padding: 3% 0% 3% 0%;
+    margin: 0% -3% 0% -5%;
+}
+
+#izquierda{
+    /* border-color: red; */
+    /* border-style: solid; */
+    border-width: 1px;
+    align-items: stretch;
+    width: 35%;
+    padding: 0% 2% 0% 2%;
+}
+
+#derecha{
+    /* border-color: yellow; */
+    /* border-style: solid; */
+    border-width: 1px;
+    align-items: stretch;
+    width: 40%;
+    border-left: 2px solid rgba(129, 129, 129, .2);
+}
+/* formulario */
+
+#titulo_comunicacion, #titulo_ntras_redes{
+    font-size: 24px;
+    font-weight: bold;
+    color: #F5A623;
+}
+
+#formulario_contacto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+p{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
+#mensaje{
+    height: 150px;
+    resize: none;
+}
+
+#enviar{
+    width: 15%;
+    padding: 10px;
+    background-color: #F5A623;
+    color: white;
+    border: none;
+    cursor: pointer;
+    /* margin-top: 2%; */
+}
+/* fin formulario */
+
+#rs, #comunicacion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+
+#titulo_ntras_redes{
+    margin-right: 2.5%;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#titulo_comunicacion{
+    width: 60%;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#txt_comunicacion{
+    color: #777;
+    margin: 0%;
+}
+
+input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+.linea{
+    border-bottom: 1px solid;
+    border-color: rgba(129, 129, 129, .2);
+    border-style: solid;
+    border-width: 0.5px;
+    max-height: 2px;
+    width: 50%;
+}
+
+#lista_rs{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#footer{
+    background-color: #003880;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#contenido_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4% 5%;
+}
+
+#footer_logo{
+    width: 25%;
+    background-color: #003880;
+}
+
+#logo_footer{
+    width: 300px;
+    height: auto;
+    display: block;
+}
+
+#footer_contenidos, #footer_ayuda{
+    width: 15%;
+}
+
+#footer_suscripcion{
+    width: 30%;
+}
+
+#footer h3{
+    color: #F5A623;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#footer ul{
+    padding: 0;
+    margin: 0;
+}
+
+#footer li{
+    margin-bottom: 15px;
+}
+
+#footer a{
+    color: white;
+    font-size: 14px;
+}
+
+#formulario_suscripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formulario_suscripcion input{
+    background-color: white;
+    color: white;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.input_suscripcion{
+    width: 60%;
+}
+
+#check_suscripcion{
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+#check_suscripcion input{
+    margin-right: 5px;
+}
+
+#btn_suscripcion{
+    width: 25%;
+    padding: 12px;
+    background-color: #F5A623;
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    margin-left: -20%;
+}
+
+#titulo_conectate{
+    text-align: center;
+}
+
+#footer_redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#footer_redes li{
+    margin: 0 8px;
+}
+
+#footer_redes img{
+    width: 28px;
+    background-color: #777;
+    border-radius: 20px;
+}
+
+#copyright{
+    border-top: 1px solid #333;
+    padding: 1.5% 5%;
+    font-size: 11px;
+}
+
+#copyright p{
+    margin: 0 0 5px 0;
+    color: white;
+}

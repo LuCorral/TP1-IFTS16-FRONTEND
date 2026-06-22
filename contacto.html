@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/contacto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <title>contacto</title>
+</head>
+<body>
+    <nav id="navegacion_vacia"></nav>
+    <nav id="navegacion">
+        <img src="./img/burger.png" alt="Logo" id="logo_nav">
+        <ul>
+            <li><a href="nuestras_hamburguesas.html">NUESTRAS HAMBURGUESAS</a></li>
+            <li><a href="tutoriales.html">TUTORIALES</a></li>
+            <li><a href="locales.html">LOCALES</a></li>
+            <li><a href="menu.html">NUESTRO MENÚ</a></li>
+            <li><a href="trabajo.html">TRABAJÁ CON NOSOTROS</a></li>
+            <li><a href="franquicias.html">FRANQUICIAS</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+
+    <div class="principal">
+        <div id="izquierda">
+            <div id="comunicacion">
+                <h2 id="titulo_comunicacion">COMUNICATE CON NOSOTROS</h2>
+                <div class="linea"></div>
+            </div>
+            <p id="txt_comunicacion">Ante cualquier consulta no dudes en comunicarte. Dejá tus datos y consulta utilizando el formulario a continuación y nos contactaremos a la brevedad.</p>
+            <form id="formulario_contacto" action="enviar_contacto.php" method="post">
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+                <p>
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto" required>
+                </p>
+                <p>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                </p>
+                <button type="submit" id="enviar">Enviar</button>
+            </form>
+        </div>
+
+        <div id="derecha">
+            <div id="rs">
+                <h2 id="titulo_ntras_redes">NUESTRAS REDES SOCIALES</h2>
+                <div class="linea"></div>
+            </div>
+            <ul id="lista_rs">
+                <li><a href="https://www.facebook.com"><img src="./img/facebook.png" alt="Facebook" class="rs-img"></a></li>
+                <li><a href="https://www.instagram.com"><img src="./img/instagram.png" alt="Instagram" class="rs-img"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div id="contenido_footer">
+            <div id="footer_logo">
+                <img src="./img/burger.png" alt="Logo" id="logo_footer">
+            </div>
+
+            <div id="footer_contenidos">
+                <h3>CONTENIDOS</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nuestro_cafe.html">Nuestras Hamburguesas</a></li>
+                    <li><a href="contacto.html">Locales</a></li>
+                    <li><a href="contacto.html">Nuestro menú</a></li>
+                </ul>
+            </div>
+
+            <div id="footer_ayuda">
+                <h3>NECESITÁS AYUDA</h3>
+                <ul>
+                    <li><a href="productos.html">Tutoriales</a></li>
+                    <li><a href="contacto.html">Trabajá en TDC</a></li>
+                    <li><a href="contacto.html">Franquicias</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div id="footer_suscripcion">
+                <h3>¡SUSCRIBITE PARA RECIBIR DESCUENTOS Y NOVEDADES EXCLUSIVAS!</h3>
+
+                <form id="formulario_suscripcion">
+                    <input type="text" placeholder="Tu nombre" class="input_suscripcion">
+                    <input type="email" placeholder="Tu email" class="input_suscripcion">
+
+                    <label id="check_suscripcion">
+                        <input type="checkbox">
+                        Sí, quiero recibir descuentos y novedades.
+                    </label>
+
+                    <button type="submit" id="btn_suscripcion">SUSCRIBIRME</button>
+                </form>
+
+                <h3 id="titulo_conectate">CONECTATE CON NOSOTROS</h3>
+
+                <ul id="footer_redes">
+                    <li><a href="https://www.facebook.com"><img src="./img/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com"><img src="./img/instagram.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="copyright">
+            <p>&copy; Copyright 2024 Tienda de café - Todos los derechos reservados.</p>
+            <p>Todos los logos, productos, marcas y nombres aquí utilizados son propiedad registrada.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+li {
+    list-style: none;
+}
+
+/* NAV */
+
+#logo_nav {
+    margin: 0% 4% 2% 2%;
+    width: 150px;
+    height: 150px;
+}
+
+#navegacion_vacia {
+    height: 4.5vh;
+    border: 1px solid #003880;
+    background-color: #003880;
+}
+
+#navegacion {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    border: 1px solid #003880;
+    background-color: #003880;
+    padding-left: 10%;
+}
+
+#navegacion ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+    background-color: #003880;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* INTRODUCCIÓN */
+
+#introduccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 5%;
+}
+
+.texto {
+    text-align: center;
+    color: #777;
+}
+
+/* TUTORIALES */
+
+#tutoriales {
+    width: 90%;
+    margin: 40px auto 60px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.tutorial {
+    position: relative;
+    overflow: hidden;
+}
+
+.tutorial img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay h3 {
+    margin: 0;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.overlay a {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+#footer {
+    background-color: #003880;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#contenido_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4% 5%;
+}
+
+#footer_logo {
+    width: 25%;
+    background-color: #003880;
+}
+
+#logo_footer {
+    width: 300px;
+    height: auto;
+    display: block;
+}
+
+#footer_contenidos,
+#footer_ayuda {
+    width: 15%;
+}
+
+#footer_suscripcion {
+    width: 30%;
+}
+
+#footer h3 {
+    color: #F5A623;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+#footer li {
+    margin-bottom: 15px;
+}
+
+#footer a {
+    color: white;
+    font-size: 14px;
+}
+
+#formulario_suscripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formulario_suscripcion input {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.input_suscripcion {
+    width: 60%;
+}
+
+#check_suscripcion {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+#check_suscripcion input {
+    margin-right: 5px;
+}
+
+#btn_suscripcion {
+    width: 25%;
+    padding: 12px;
+    background-color: #F5A623;
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    margin-left: -20%;
+}
+
+#titulo_conectate {
+    text-align: center;
+}
+
+#footer_redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#footer_redes li {
+    margin: 0 8px;
+}
+
+#footer_redes img {
+    width: 28px;
+    background-color: #777;
+    border-radius: 20px;
+}
+
+#copyright {
+    border-top: 1px solid #333;
+    padding: 1.5% 5%;
+    font-size: 11px;
+}
+
+#copyright p {
+    margin: 0 0 5px 0;
+    color: white;
+}
