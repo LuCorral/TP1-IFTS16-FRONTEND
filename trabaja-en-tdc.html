@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/trabaja-en-tdc.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <title>Trabajá con nosotros</title>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+
+<nav id="navegacion_vacia"></nav>
+
+<nav id="navegacion">
+    <a href="index.html">
+        <img src="./img/burger.png" alt="Logo Burger Delicious" id="logo_nav">
+    </a>
+
+    <ul>
+        <li><a href="nuestras_hamburguesas.html">NUESTRAS HAMBURGUESAS</a></li>
+        <li><a href="tutoriales.html">TUTORIALES</a></li>
+        <li><a href="locales.html">LOCALES</a></li>
+        <li><a href="menu.html">NUESTRO MENÚ</a></li>
+        <li><a href="trabaja-en-tdc.html">TRABAJÁ CON NOSOTROS</a></li>
+        <li><a href="franquicias.html">FRANQUICIAS</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+    </ul>
+</nav>
+
+<!-- CONTENIDO PRINCIPAL -->
+
+<main id="contenido_principal">
+
+    <section id="presentacion_trabajo">
+
+        <p id="ruta">Inicio / Trabajá con nosotros</p>
+
+        <h1>TRABAJÁ CON NOSOTROS</h1>
+
+        <div class="linea_titulo"></div>
+
+        <p class="texto_presentacion">
+            En Burger Delicious estamos buscando personas con ganas de aprender,
+            trabajar en equipo y brindar una buena atención.
+        </p>
+
+        <p class="texto_presentacion">
+            Si querés formar parte de nuestro equipo, completá el formulario
+            y envianos tus datos.
+        </p>
+
+    </section>
+
+    <section id="seccion_formulario">
+
+        <form id="formulario_trabajo">
+
+            <div class="grupo_formulario">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="grupo_formulario">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+
+            <div class="grupo_formulario">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="grupo_formulario">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+
+            <div class="grupo_formulario">
+                <label for="puesto">Puesto de interés</label>
+
+                <select id="puesto" name="puesto">
+                    <option value="">Seleccioná un puesto</option>
+                    <option value="cocina">Cocina</option>
+                    <option value="atencion">Atención al cliente</option>
+                    <option value="caja">Caja</option>
+                    <option value="reparto">Reparto</option>
+                </select>
+            </div>
+
+            <div class="grupo_formulario">
+                <label for="sucursal">Sucursal preferida</label>
+
+                <select id="sucursal" name="sucursal">
+                    <option value="">Seleccioná una sucursal</option>
+                    <option value="palermo">Palermo</option>
+                    <option value="tigre">Tigre</option>
+                    <option value="san-isidro">San Isidro</option>
+                </select>
+            </div>
+
+            <div class="grupo_formulario">
+                <label for="curriculum">Adjuntá tu currículum</label>
+                <input type="file" id="curriculum" name="curriculum">
+            </div>
+
+            <div class="grupo_formulario">
+                <label for="mensaje">Contanos brevemente sobre vos</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+            </div>
+
+            <button type="submit" id="boton_enviar">
+                ENVIAR SOLICITUD
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+<!-- PIE DE PÁGINA -->
+
+<footer id="footer">
+
+    <div id="contenido_footer">
+
+        <div id="footer_logo">
+            <img
+                src="./img/burger.png"
+                alt="Logo Burger Delicious"
+                id="logo_footer"
+            >
+        </div>
+
+        <div id="footer_contenidos">
+            <h3>CONTENIDOS</h3>
+
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nuestras_hamburguesas.html">Nuestras hamburguesas</a></li>
+                <li><a href="locales.html">Locales</a></li>
+                <li><a href="menu.html">Nuestro menú</a></li>
+            </ul>
+        </div>
+
+        <div id="footer_ayuda">
+            <h3>NECESITÁS AYUDA</h3>
+
+            <ul>
+                <li><a href="tutoriales.html">Tutoriales</a></li>
+                <li><a href="trabaja-en-tdc.html">Trabajá con nosotros</a></li>
+                <li><a href="franquicias.html">Franquicias</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div id="footer_suscripcion">
+            <h3>
+                ¡SUSCRIBITE PARA RECIBIR DESCUENTOS Y NOVEDADES EXCLUSIVAS!
+            </h3>
+
+            <form id="formulario_suscripcion">
+                <input
+                    type="text"
+                    placeholder="Tu nombre"
+                    class="input_suscripcion"
+                >
+
+                <input
+                    type="email"
+                    placeholder="Tu email"
+                    class="input_suscripcion"
+                >
+
+                <label id="check_suscripcion">
+                    <input type="checkbox">
+                    Sí, quiero recibir descuentos y novedades.
+                </label>
+
+                <button type="submit" id="btn_suscripcion">
+                    SUSCRIBIRME
+                </button>
+            </form>
+
+            <h3 id="titulo_conectate">
+                CONECTATE CON NOSOTROS
+            </h3>
+
+            <ul id="footer_redes">
+                <li>
+                    <a href="https://www.facebook.com">
+                        <img src="./img/facebook.png" alt="Facebook">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com">
+                        <img src="./img/instagram.png" alt="Instagram">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div id="copyright">
+        <p>
+            &copy; Copyright 2026 Burger Delicious.
+            Todos los derechos reservados.
+        </p>
+
+        <p>
+            Todos los logos, productos, marcas y nombres aquí utilizados
+            son propiedad de sus respectivos dueños.
+        </p>
+    </div>
+
+</footer>
+
+</body>
+
+</html>
