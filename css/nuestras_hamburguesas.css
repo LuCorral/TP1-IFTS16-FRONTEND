@@ -1,0 +1,576 @@
+/* AJUSTES GENERALES */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    background-color: #fafafa;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+li {
+    list-style: none;
+}
+
+/* NAVEGACIÓN */
+
+#navegacion_vacia {
+    height: 4.5vh;
+    background-color: #003880;
+}
+
+#navegacion {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    background-color: #003880;
+    padding-left: 10%;
+}
+
+#logo_nav {
+    width: 150px;
+    height: 150px;
+    margin: 0 4% 2% 2%;
+}
+
+#navegacion ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#navegacion a:hover {
+    color: #F5A623;
+}
+
+/* CONTENIDO PRINCIPAL */
+
+#contenido_principal {
+    width: 85%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+#presentacion_hamburguesas {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#ruta {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+#presentacion_hamburguesas h1 {
+    color: #F5A623;
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.linea_titulo {
+    width: 80px;
+    border-bottom: 3px solid #003880;
+    margin: 0 auto 25px auto;
+}
+
+.texto_presentacion {
+    color: #777;
+    font-size: 17px;
+    max-width: 700px;
+    margin: 10px auto;
+    line-height: 1.6;
+}
+
+/* SECCIÓN CALIDAD CARNE (FLEX) */
+
+#calidad_carne_seccion {
+    margin-bottom: 70px;
+}
+
+.contenido_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 50px;
+}
+
+.bloque_texto {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bloque_texto h2 {
+    color: #003880;
+    font-size: 26px;
+    margin: 0 0 20px 0;
+    font-weight: 600;
+}
+
+.bloque_texto p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 0 15px 0;
+    font-weight: 300;
+}
+
+.bloque_texto strong {
+    font-weight: bold;
+    color: #333;
+}
+
+.destacado_calidad {
+    background-color: #f1f5f9;
+    border-left: 4px solid #F5A623;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 0 8px 8px 0;
+}
+
+.destacado_calidad h3 {
+    color: #003880;
+    font-size: 18px;
+    margin: 0 0 15px 0;
+    font-weight: 600;
+}
+
+.destacado_calidad ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.destacado_calidad li {
+    list-style-type: disc;
+    margin-bottom: 12px;
+    font-size: 15px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.destacado_calidad li:last-child {
+    margin-bottom: 0;
+}
+
+.bloque_imagen {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bloque_imagen img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* SECCIÓN OTROS SECRETOS (GRID) */
+
+#otros_secretos {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#otros_secretos h2 {
+    color: #003880;
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.linea_categoria {
+    width: 60px;
+    border-bottom: 3px solid #F5A623;
+    margin: 0 auto 40px auto;
+}
+
+.grilla_detalles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.detalle_card {
+    background-color: white;
+    border: 1px solid #eaeaea;
+    padding: 35px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.detalle_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.09);
+}
+
+.detalle_card .icono {
+    font-size: 45px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.detalle_card h3 {
+    color: #003880;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+}
+
+.detalle_card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+    font-weight: 300;
+}
+
+/* FOOTER */
+
+#footer {
+    background-color: #003880;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#contenido_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4% 5%;
+}
+
+#footer_logo {
+    width: 25%;
+}
+
+#logo_footer {
+    width: 300px;
+    height: auto;
+    display: block;
+}
+
+#footer_contenidos,
+#footer_ayuda {
+    width: 15%;
+}
+
+#footer_suscripcion {
+    width: 30%;
+}
+
+#footer h3 {
+    color: #F5A623;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+#footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+#footer li {
+    margin-bottom: 15px;
+}
+
+#footer a {
+    color: white;
+    font-size: 14px;
+}
+
+#footer a:hover {
+    color: #F5A623;
+}
+
+#formulario_suscripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formulario_suscripcion input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.input_suscripcion {
+    width: 60%;
+}
+
+#check_suscripcion {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#btn_suscripcion {
+    width: 140px;
+    padding: 12px;
+    background-color: #F5A623;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+
+#btn_suscripcion:hover {
+    background-color: white;
+}
+
+#titulo_conectate {
+    text-align: center;
+}
+
+#footer_redes {
+    display: flex;
+    justify-content: center;
+}
+
+#footer_redes li {
+    margin: 0 8px;
+}
+
+#footer_redes img {
+    width: 28px;
+    border-radius: 20px;
+}
+
+#copyright {
+    border-top: 1px solid #333;
+    padding: 1.5% 5%;
+    font-size: 11px;
+}
+
+#copyright p {
+    margin: 0 0 5px 0;
+    color: white;
+}
+
+/* --- RESPONSIVIDAD (MEDIA QUERIES) --- */
+
+/* TABLET HORIZONTAL */
+
+@media (max-width: 1080px) {
+
+    #navegacion {
+        padding-left: 4%;
+    }
+
+    #logo_nav {
+        width: 120px;
+        height: 120px;
+    }
+
+    #navegacion ul {
+        width: 80%;
+        gap: 15px;
+    }
+
+    #navegacion a {
+        font-size: 13px;
+    }
+
+    #contenido_principal {
+        width: 90%;
+    }
+
+    .contenido_flex {
+        gap: 30px;
+    }
+
+    #contenido_footer {
+        flex-wrap: wrap;
+    }
+
+    #footer_logo {
+        width: 40%;
+    }
+
+    #footer_contenidos,
+    #footer_ayuda {
+        width: 25%;
+    }
+
+    #footer_suscripcion {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+/* TABLET VERTICAL */
+
+@media (max-width: 768px) {
+
+    #navegacion_vacia {
+        height: 2vh;
+    }
+
+    #navegacion {
+        height: auto;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    #logo_nav {
+        width: 110px;
+        height: 110px;
+        margin: 0 0 15px 0;
+    }
+
+    #navegacion ul {
+        width: 90%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #contenido_principal {
+        width: 90%;
+        padding: 35px 0;
+    }
+
+    #presentacion_hamburguesas h1 {
+        font-size: 30px;
+    }
+
+    .contenido_flex {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .bloque_texto,
+    .bloque_imagen {
+        width: 100%;
+    }
+
+    .grilla_detalles {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    #contenido_footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #footer_logo,
+    #footer_contenidos,
+    #footer_ayuda,
+    #footer_suscripcion {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    #logo_footer {
+        width: 220px;
+        margin: 0 auto;
+    }
+
+    .input_suscripcion {
+        width: 75%;
+    }
+}
+
+/* MOBILE 1 */
+
+@media (max-width: 480px) {
+
+    #navegacion ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #navegacion a {
+        font-size: 12px;
+    }
+
+    #contenido_principal {
+        width: 92%;
+    }
+
+    #presentacion_hamburguesas h1 {
+        font-size: 26px;
+    }
+
+    .texto_presentacion {
+        font-size: 15px;
+    }
+
+    .bloque_texto h2 {
+        font-size: 22px;
+    }
+
+    #otros_secretos h2 {
+        font-size: 22px;
+    }
+
+    #footer h3 {
+        font-size: 13px;
+    }
+
+    #copyright {
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+/* MOBILE 2 */
+
+@media (max-width: 375px) {
+
+    #logo_nav {
+        width: 90px;
+        height: 90px;
+    }
+
+    #presentacion_hamburguesas h1 {
+        font-size: 22px;
+    }
+
+    #ruta {
+        font-size: 12px;
+    }
+
+    .texto_presentacion {
+        font-size: 14px;
+    }
+
+    #logo_footer {
+        width: 180px;
+    }
+
+    .input_suscripcion {
+        width: 90%;
+    }
+
+    #btn_suscripcion {
+        width: 100%;
+    }
+}
